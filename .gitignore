@@ -1,0 +1,48 @@
+# ============================================================
+#  .gitignore — hanya source code yang di-push
+# ============================================================
+
+# --- Build & cache (tidak perlu di-push) ---
+/build/
+**/doc/api/
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/coverage/
+app.*.symbols
+app.*.map.json
+
+# --- IDE / Editor ---
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+.history
+.atom/
+.build/
+.buildlog/
+migrate_working_dir/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Log ---
+*.log
+
+# --- Folder platform Flutter (boilerplate, bukan source code) ---
+# Diabaikan supaya repo bersih. Kembalikan kapan saja dengan:
+#   flutter create .
+android/
+ios/
+linux/
+macos/
+web/
+windows/
+
+# --- Widget Preview ---
+.widget_preview/
